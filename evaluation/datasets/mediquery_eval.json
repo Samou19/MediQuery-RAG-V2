@@ -1,0 +1,53 @@
+
+[
+  {
+    "id": "Q01",
+    "question": "Quelles sont les étapes du parcours de soins d'un patient adulte vivant avec un diabète de type 2 ?",
+    "relevant_chunk_ids": [16]
+  },
+  {
+    "id": "Q02",
+    "question": "Quelle population est concernée par le dépistage du diabète de type 2 ?",
+    "relevant_chunk_ids": [29,30,33]
+  },
+  {
+    "id": "Q03",
+    "question": "Quels tests sont utilisés pour dépister le diabète de type 2 et à quelle fréquence ?",
+    "relevant_chunk_ids": [33,34]
+  },
+  {
+    "id": "Q04",
+    "question": "Comment confirmer le diagnostic de diabète de type 2 ?",
+    "relevant_chunk_ids": [35,37]
+  },
+  {
+    "id": "Q05",
+    "question": "Quels sont les éléments de la prise en charge initiale du patient ?",
+    "relevant_chunk_ids": [43, 247]
+  },
+  {
+    "id": "Q06",
+    "question": "Quels sont les objectifs de la prise en charge thérapeutique ?",
+    "relevant_chunk_ids": [78,79]
+  },
+  {
+    "id": "Q07",
+    "question": "Quelles mesures non médicamenteuses sont recommandées ?",
+    "relevant_chunk_ids": [80, 79, 93, 64]
+  },
+  {
+    "id": "Q08",
+    "question": "Quelle est la place de la prise en charge médicamenteuse dans le parcours de soins ?",
+    "relevant_chunk_ids": [102, 248, 79]
+  },
+  {
+    "id": "Q09",
+    "question": "Comment organiser le suivi du patient adulte vivant avec un diabète de type 2 ?",
+    "relevant_chunk_ids": [248, 126]
+  },
+  {
+    "id": "Q10",
+    "question": "Quelles complications doivent être recherchées et surveillées chez le patient ?",
+    "relevant_chunk_ids": [147, 294, 59, 153, 200]
+  }
+]

@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+python-dotenv
+python-multipart
+pymupdf
+langchain-text-splitters
+voyageai>=0.3.7
+qdrant-client
+rank-bm25
+langchain-anthropic
+pytest
+locust
