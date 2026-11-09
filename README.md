@@ -23,28 +23,68 @@ Le corpus documentaire utilisé est le guide HAS 2025 consacré au parcours de s
 
 ## ⚙️ Architecture RAG
 
+MediQuery V2 repose sur deux pipelines complémentaires :
+
+### 1. Pipeline d'indexation documentaire (Offline)
+
 ```text
-Question utilisateur
-        |
-        v
-   Recherche hybride
-   Dense + BM25
-        |
-        v
-     Fusion RRF
-        |
-        v
-     Reranking
-        |
-        v
-  Construction du contexte
-        |
-        v
-     Claude API
-        |
-        v
- Réponse + Sources citées
+       Document PDF (HAS)
+               |
+               v
+      Extraction du texte
+             PyMuPDF
+               |
+               v
+       Nettoyage du texte
+               |
+               v
+           Chunking
+    Découpage en segments
+               |
+               v
+       Génération d'embeddings
+       Voyage AI (voyage-4-lite)
+               |
+               v
+          Indexation
+             Qdrant
 ```
+
+### 2. Pipeline de recherche et génération (Online)
+
+```text
+       Question utilisateur
+               |
+        +------+------+
+        |             |
+        v             v
+   Dense Search   Sparse Search
+   Voyage AI         BM25
+        |             |
+        +------+------+
+               |
+               v
+          Fusion RRF
+               |
+               v
+           Reranking
+          Voyage AI
+               |
+               v
+      Construction du contexte
+               |
+               v
+        Prompt Engineering
+               |
+               v
+           Claude API
+               |
+               v
+      Réponse contextualisée
+         + Sources citées
+```
+
+**Technologies clés :** PyMuPDF, Voyage AI, Qdrant, BM25, RRF, FastAPI et Anthropic Claude.
 
 ## 🚀 Fonctionnalités
 
