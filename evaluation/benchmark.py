@@ -16,7 +16,7 @@ CANDIDATE_K = 10
 
 
 def load_dataset():
-    with open(DATASET_PATH, "r", encoding="utf-8") as file:
+    with open(DATASET_PATH, encoding="utf-8") as file:
         return json.load(file)
 
 

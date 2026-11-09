@@ -39,10 +39,10 @@ def chat(request: ChatRequest):
             timings_ms=result["timings_ms"],
         )
 
-    except Exception:
+    except Exception as err:
         logger.exception("Erreur lors du traitement de la question.")
 
         raise HTTPException(
             status_code=500,
             detail="Une erreur est survenue lors du traitement de votre question.",
-        )
+        ) from err

@@ -10,7 +10,7 @@ DATASET_PATH = Path("evaluation/datasets/mediquery_eval.json")
 
 
 def load_questions():
-    with open(DATASET_PATH, "r", encoding="utf-8") as file:
+    with open(DATASET_PATH, encoding="utf-8") as file:
         return json.load(file)
 
 

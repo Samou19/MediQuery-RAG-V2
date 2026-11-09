@@ -61,7 +61,7 @@ def generate_embeddings(
 
         total_tokens += response.total_tokens
 
-        for chunk, vector in zip(batch, response.embeddings):
+        for chunk, vector in zip(batch, response.embeddings, strict=True):
             if len(vector) != dimension:
                 raise ValueError(f"Dimension incorrecte : {len(vector)}")
 
