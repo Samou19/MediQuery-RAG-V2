@@ -15,4 +15,4 @@ logs/
 # Données vectorisées locales
 data/processed/embedded_chunks.json
 data/raw/*
-test_*
+test_*.py
