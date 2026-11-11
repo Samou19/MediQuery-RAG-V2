@@ -12,6 +12,7 @@ venv/
 # Logs
 logs/
 *.log
+
 # Données vectorisées locales
 data/processed/embedded_chunks.json
 data/raw/*
