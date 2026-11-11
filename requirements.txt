@@ -1,13 +1,30 @@
+
+# API Backend
 fastapi
 uvicorn[standard]
 pydantic-settings
 python-dotenv
 python-multipart
+
+# Document processing
 pymupdf
 langchain-text-splitters
+
+# RAG - Embeddings and Vector Database
 voyageai>=0.3.7
 qdrant-client
 rank-bm25
+
+# LLM
 langchain-anthropic
+
+# Frontend
+streamlit
+requests
+
+# Testing
 pytest
 locust
+
+# Google run
+google-auth
